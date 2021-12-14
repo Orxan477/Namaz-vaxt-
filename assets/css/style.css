@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
   }
-  main{
-    /* background-image: url('https://t3.ftcdn.net/jpg/04/44/84/62/360_F_444846201_QKklRZQs4gaKNrCty9tXbKjJiCjCKnfh.jpg'); */
-    background-image: url('https://static.vecteezy.com/system/resources/previews/002/271/505/non_2x/islamic-background-with-followers-full-editable-template-free-vector.jpg');
+  section{
+    background-image: url('https://t3.ftcdn.net/jpg/04/44/84/62/360_F_444846201_QKklRZQs4gaKNrCty9tXbKjJiCjCKnfh.jpg');
+    /* background-image: url('https://static.vecteezy.com/system/resources/previews/002/271/505/non_2x/islamic-background-with-followers-full-editable-template-free-vector.jpg'); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
   .text-color{
-    color: white;
+    /* color: white; */
+    color: black;
   }
 .see{
     margin-top: 3%;
