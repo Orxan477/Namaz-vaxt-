@@ -1,11 +1,21 @@
-//   load.classList.remove("d-none");
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+
 const d= new Date();
     let day=(d.getDate());
    let month=(d.getMonth()+1);
    let year=(d.getFullYear());
    getData(day,month,year);
    currentData=document.querySelector(".current").innerHTML=d;
-//    await load.classList.add("d-none");
    
 date=document.querySelector("#date");
 button=document.querySelector(".btn");
@@ -21,14 +31,14 @@ button.onclick=function () {
 async function getData(day,month,year){
 let dateData= await fetch(`https://api.aladhan.com/v1/calendar?latitude=40&longitude=49&method=2&month=${month}&year=${year}`);
 let timeNamaz= await dateData.json();
-document.querySelector(".table-dark").lastElementChild.innerHTML='';
+document.querySelector(".table").lastElementChild.innerHTML='';
 fillTable(timeNamaz,day);
 }
 
 
 
 function fillTable(timeNamaz,day){
-    document.querySelector(".table-dark").classList.remove("d-none")
+    document.querySelector(".table").classList.remove("d-none")
     i=day-1;
     let tr=`<tr>
                  <td>Imsak</td>
@@ -68,5 +78,5 @@ function fillTable(timeNamaz,day){
             </tr>
        `
 
-document.querySelector(".table-dark").lastElementChild.innerHTML=tr;
+document.querySelector(".table").lastElementChild.innerHTML=tr;
 }
