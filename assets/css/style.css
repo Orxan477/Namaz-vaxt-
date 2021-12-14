@@ -3,12 +3,7 @@
     padding: 0;
   }
   section{
-    /* background-image: url('https://t3.ftcdn.net/jpg/04/44/84/62/360_F_444846201_QKklRZQs4gaKNrCty9tXbKjJiCjCKnfh.jpg'); */
-    /* background-image: url('https://static.vecteezy.com/system/resources/previews/002/375/359/non_2x/modern-sunset-mosque-background-free-vector.jpg'); */
-    /* background-image: url('https://static.vecteezy.com/system/resources/previews/002/382/067/original/sunset-mosque-background-free-vector.jpg'); */
     background-image: url('https://i.pinimg.com/originals/72/b3/5a/72b35a4293b0ba5edf3abcbcaaf6f05d.jpg');
-    
-    /* background-image: url('https://static.vecteezy.com/system/resources/previews/002/271/505/non_2x/islamic-background-with-followers-full-editable-template-free-vector.jpg'); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -19,56 +14,6 @@
 .see{
     margin-top: 1.5%;
 }
-
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 50px;
-  height: 50px;
-  margin: -76px 0 0 -76px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
-}
-
-#myDiv {
-  display: none;
-  text-align: center;
-}
-
-  
   .table{
     font-size: 20px;
     font-weight: 700;
