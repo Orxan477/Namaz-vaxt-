@@ -1,3 +1,13 @@
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
 
 
 
@@ -25,8 +35,6 @@ let timeNamaz= await dateData.json();
 document.querySelector(".table").lastElementChild.innerHTML='';
 fillTable(timeNamaz,day);
 }
-
-
 
 function fillTable(timeNamaz,day){
     document.querySelector(".table").classList.remove("d-none")

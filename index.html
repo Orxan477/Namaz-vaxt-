@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+
+    <div id="loader"></div>
+    
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        
+    </div>
+    
     <header></header>
 
     <main>
@@ -35,11 +42,9 @@
                 </div>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center mt-3">
-
                         <button type="button" class="btn btn-success">Search</button>
                     </div>
                 </div>
-                <div id="loader"></div>
                 <div class="row justify-content-center">
                     <div class="col-5 d-flex justify-content-center mt-3 tab">
                         <table class="table d-none">
